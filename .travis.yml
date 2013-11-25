@@ -1,6 +1,5 @@
 before_script:
-  - mysql -e 'create database `simple-quiz`;'
-  - mysql -e 'source simple-quiz.sql;'
+  - mysql -e 'create database `simple-quiz`;use `simple-quiz`;source simple-quiz.sql;'
 language: php
 php:
   - "5.4"
