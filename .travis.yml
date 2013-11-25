@@ -1,5 +1,6 @@
 before_script:
   - mysql -e 'create database `simple-quiz`;use `simple-quiz`;source simple-quiz.sql;'
+  - composer install
 language: php
 php:
   - "5.4"
