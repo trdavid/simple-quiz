@@ -1,0 +1,9 @@
+before_script:
+  - mysql -e 'create database simple-quiz;'
+  - mysql -e 'source simple-quiz.sql;'
+language: php
+php:
+  - "5.5"
+  - "5.4"
+  - "5.3"
+script: phpunit --configuration phpunit.xml
